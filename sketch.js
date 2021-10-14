@@ -188,10 +188,7 @@ function setup(){
 
     createPlatform2(windowWidth/2 + 1880, windowHeight-160 , 0.2)
 
-    moving1 = createSprite(windowWidth/2 + 2100, windowHeight-160)
-    moving1.addImage(PlatformI1)
-    moving1.scale = 0.2
-    moving1.velocityX = 4
+  
 
 
     jumpboxM1 = createSprite(windowWidth/2 + 2100, windowHeight-160)
@@ -200,8 +197,7 @@ function setup(){
     jumpboxM1.setCollider("rectangle",0,0,150,80)
     JG.add(jumpboxM1)
 
-
-
+    
 
     bouncebox = createSprite(windowWidth/2 + 1980, windowHeight-160,50,50,)
     bouncebox.visible = false
@@ -211,22 +207,22 @@ function setup(){
     //bouncebox2.debug = true
     bouncebox2.visible = false
 
-    createPlatform2(windowWidth/2 + 2880, windowHeight-160 , 0.2)
+    moving1 = createSprite(windowWidth/2 + 2100, windowHeight-160)
+    moving1.addImage(PlatformI1)
+    moving1.scale = 0.2
+    moving1.velocityX = 4
 
-    createPlatform2(windowWidth/2 + 3250, windowHeight-265 , 0.2)
-
-    createPlatform(windowWidth/2 + 3050, windowHeight-100 , 0.5)
-
-    createPlatform(windowWidth/2 + 3450, windowHeight-100 , 0.5)
+    moving2 = createSprite(windowWidth/2 + 7000, windowHeight - 20,20,20)
+    moving2.setCollider("rectangle", -10 , -360 ,580,50)
+   // moving2.debug = true
+    moving2.addImage(PlatformI2)
+    moving2.scale = 0.5
+    moving2.velocityY = -3
 
     bounceboxE1 = createSprite(windowWidth/2 + 2950, windowHeight/2+100,40,40)
     bounceboxE1.visible = false
     bounceboxE2 = createSprite(windowWidth/2 + 3550, windowHeight/2+100,40,40)
     bounceboxE2.visible = false
-
-    createPlatform2(windowWidth/2 + 3950, windowHeight/2 + 100 , 0.3)
-
-    createPlatform(windowWidth/2 + 4500, windowHeight/2 + 400 , 0.5)
 
     bounceboxE3 = createSprite(windowWidth/2 + 4750, 30,40,40)
     //bounceboxE3.debug = true
@@ -235,6 +231,40 @@ function setup(){
    // bounceboxE4.debug = true
     bounceboxE4.visible = false
 
+    bounceboxM1 = createSprite(windowWidth/2 + 7000, windowHeight - 350,20,20)
+    bounceboxM1.visible = false
+
+    jumpboxM2 = createSprite(windowWidth/2 + 7000, windowHeight - 50)
+    jumpboxM2.setCollider("rectangle", -10 , -200 ,300,20)
+    jumpboxM2.visible = false
+    JG.add(jumpboxM2)
+
+    bounceboxE5 = createSprite(windowWidth/2 + 8000, 30,40,40)
+    //bounceboxE3.debug = true
+    bounceboxE5.visible = false
+    bounceboxE6 = createSprite(windowWidth/2 + 8000, windowHeight-50,40,40)
+   // bounceboxE4.debug = true
+    bounceboxE6.visible = false
+
+
+
+
+
+    createPlatform2(windowWidth/2 + 2880, windowHeight-160 , 0.2)
+
+    createPlatform2(windowWidth/2 + 3250, windowHeight-265 , 0.2)
+
+    createPlatform(windowWidth/2 + 3050, windowHeight-100 , 0.5)
+
+    createPlatform(windowWidth/2 + 3450, windowHeight-100 , 0.5)
+
+
+
+    createPlatform2(windowWidth/2 + 3950, windowHeight/2 + 100 , 0.3)
+
+    createPlatform(windowWidth/2 + 4500, windowHeight/2 + 400 , 0.5)
+
+ 
 
 
 
@@ -246,29 +276,12 @@ function setup(){
 
     createPlatform(windowWidth/2 + 6400, windowHeight - 100 , 0.5)
 
-    bounceboxM1 = createSprite(windowWidth/2 + 7000, windowHeight - 350,20,20)
-    bounceboxM1.visible = false
 
-    jumpboxM2 = createSprite(windowWidth/2 + 7000, windowHeight - 50)
-    jumpboxM2.setCollider("rectangle", -10 , -200 ,300,20)
-    jumpboxM2.visible = false
-    JG.add(jumpboxM2)
-    
-    moving2 = createSprite(windowWidth/2 + 7000, windowHeight - 20,20,20)
-    moving2.setCollider("rectangle", -10 , -360 ,580,50)
-   // moving2.debug = true
-    moving2.addImage(PlatformI2)
-    moving2.scale = 0.5
-    moving2.velocityY = -3
+  
 
     createPlatform(windowWidth/2 + 7670, windowHeight - 140 , 0.5)
 
-    bounceboxE5 = createSprite(windowWidth/2 + 8000, 30,40,40)
-    //bounceboxE3.debug = true
-    bounceboxE5.visible = false
-    bounceboxE6 = createSprite(windowWidth/2 + 8000, windowHeight-50,40,40)
-   // bounceboxE4.debug = true
-    bounceboxE6.visible = false
+
 
     createPlatform2(windowWidth/2 + 8450, windowHeight - 200 , 0.25)
 
